@@ -1,7 +1,7 @@
 # main.tf
 
 provider "google" {
-  project = "YOUR_PROJECT_ID"
+  project = "healthcare-488108"
   region  = "us-central1"
   zone    = "us-central1-a"
 }
