@@ -1,0 +1,15 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy entire service
+COPY . .
+
+# If no dependencies, skip npm install
+# If dependencies exist, manually install:
+# Install express globally once
+RUN npm install express
+
+EXPOSE 3001
+
+CMD ["node", "src/index.js"]
