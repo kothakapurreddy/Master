@@ -16,7 +16,7 @@ jobs:
              - name: Save Docker Image as tar
                run: docker save patient-service:latest -o patient-service.tar
              - name: Upload Docker Image Artifact
-               uses: actions/upload-artifact@v3
+               uses: actions/upload-artifact@v4
                with:
                  name: patient-service-image
                  path: patient-service.tar
