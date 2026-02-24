@@ -1,0 +1,15 @@
+name: application-service build
+on: 
+ push:
+  branch:
+  - Main
+
+Jobs:
+ docker-build:
+  runs-on: ubuntu-latest
+  steps:
+   - name: checkout code
+     uses: actions/checkout@v4
+   -name: docker build
+     run: docker build -t application-service:v1 ./application-service/src
+  
