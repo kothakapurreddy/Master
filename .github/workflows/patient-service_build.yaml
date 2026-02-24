@@ -13,5 +13,11 @@ jobs:
                uses: actions/checkout@v4
              - name: docker build
                run: docker build -t patient-service:v1 ./patient-service/src
-      
+             - name: Save Docker Image as tar
+               run: docker save my-node-app:latest -o my-node-app.tar
+             - name: Upload Docker Image Artifact
+               uses: actions/upload-artifact@v3
+               with:
+                 name: my-node-app-image
+                 path: my-node-app.tar
     
