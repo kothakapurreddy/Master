@@ -12,6 +12,6 @@ jobs:
              - name: checkout code
                uses: actions/checkout@v4
              - name: docker build
-               run: docker build -t patient-service:v1 ./patient-service/
+               run: docker build -t patient-service:v1 ./patient-service/src
       
     
