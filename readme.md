@@ -1,5 +1,5 @@
 # Overview
-Welcome to the DevOps Hackathon Challenge! In this hackathon, you will demonstrate your skills in containerization, Infrastructure as Code (IaC), CI/CD, and cloud deployment using Azure / GCP services. You will be working with a simple healthcare application consisting of two microservices.
+Welcome to the DevOps Hackathon Challenge! In this hackathon, you will demonstrate your skills in containerization, Infrastructure as Code (IaC), CI/CD, and cloud deployment using Azure / GCP services. You will be working with a simple healthcare application consisting of two microservices.....
 
 # Common Requirements
 Regardless of the track you choose, you will be working with the following common elements:
