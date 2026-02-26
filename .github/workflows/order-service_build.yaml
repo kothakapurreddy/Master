@@ -15,3 +15,15 @@ jobs:
 
       - name: Build Docker Image
         run: docker build -t my-node-app ./order-service
+
+      - name: Save Docker Image as tar
+        run: docker save order-service:v1 -o my-node-app1.tar
+
+      - name: Upload Docker Image Artifact
+        uses: actions/upload-artifact@v4
+        with:
+         name: my-node-app1-image
+         path: my-node-app1.tar
+        with:
+          name: my-node-app-image
+          path: my-node-app.tar
