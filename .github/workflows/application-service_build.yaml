@@ -1,10 +1,10 @@
 name: application-service build
 on: 
  push:
-  branch:
-   - Main
+  branches: 
+    - Main
 
-Jobs:
+jobs:
  docker-build:
   runs-on: ubuntu-latest
   steps:
