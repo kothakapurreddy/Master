@@ -13,11 +13,11 @@ jobs:
    - name: docker build
      run: docker build -t application-service:v1 ./application-service/src
    - name: Save Docker Image as tar
-     run: docker save application-service:v1 -o my-node-app2.tar
+     run: docker save application-service:v1 -o my-node-application2.tar
 
    - name: Upload Docker Image Artifact
      uses: actions/upload-artifact@v4
      with:
-      name: my-node-app2-image
-      path: my-node-app2.tar
+      name: my-node-application2-image
+      path: my-node-application2.tar
   
