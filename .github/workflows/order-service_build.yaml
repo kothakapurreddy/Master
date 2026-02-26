@@ -24,6 +24,4 @@ jobs:
         with:
          name: my-node-app1-image
          path: my-node-app1.tar
-        with:
-          name: my-node-app-image
-          path: my-node-app.tar
+    
