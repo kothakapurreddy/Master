@@ -15,9 +15,7 @@ jobs:
 
       - name: Build Docker Image
         run: docker build -t order-service:v1 .
-      
-      - name: Verify Image
-        run: docker images
+
       
       - name: Save Image
         run: docker save order-service:v1 -o my-node-order.tar
