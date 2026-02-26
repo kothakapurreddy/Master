@@ -14,9 +14,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker Image
-        run: docker build -t my-node-app ./order-service
-
-      - name: Save Docker Image as tar
+        run: docker build -t order-service:v1 .
+      
+      - name: Verify Image
+        run: docker images
+      
+      - name: Save Image
         run: docker save order-service:v1 -o my-node-order.tar
 
       - name: Upload Docker Image Artifact
@@ -24,4 +27,7 @@ jobs:
         with:
          name: my-node-order-image
          path: my-node-order.tar
+
+
+         
     
