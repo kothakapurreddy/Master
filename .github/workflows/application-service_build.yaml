@@ -1,7 +1,6 @@
 name: application-service build
   
 on: 
- workflow_call:
  push:
   branches: 
     - Main
