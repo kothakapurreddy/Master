@@ -13,4 +13,4 @@ jobs:
       - name: Print message
         run: echo "Hello! GitHub Actions is working 🚀"
       - name: testing
-        run: echo "hello"
+        run: echo "hello hello"
