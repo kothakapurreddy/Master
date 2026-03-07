@@ -3,6 +3,7 @@ Deploy the containerized microservices to Azure Kubernetes Service (AKS), demons
 
 # Technical Requirements
 Infrastructure as Code (Terraform)
+hello sanjeev
 
 Provision a VNET with public and private subnets
 Set up an AKS cluster
