@@ -3,7 +3,7 @@ name: Echo Test
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   test-job:
